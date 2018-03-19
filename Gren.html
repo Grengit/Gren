@@ -4,7 +4,7 @@
 	<title></title>
 	<meta charset="utf-8">
 	<style type="text/css">
-	html,body,header,ul,li{
+	html,body,header,ul,li,img,form,input{
 		margin: 0;
 		padding: 0;
 	}
@@ -64,6 +64,9 @@
 		
 	}
 	.wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:space-between; 
 		margin:0.4rem 0;
 		padding: 0.4rem 0.2rem;
 		border: 1px solid #ccc;
@@ -72,19 +75,17 @@
 		box-shadow: 5px 5px 10px #ccc,-5px 5px 10px #ccc;
 		position: relative;
 	}
-	.row1,.row2{
-		display: flex;
-	}
+
 	.item{
 			border: 1px solid #ccc;
 			border-radius: 8px;
-			width: 4rem;
+			flex-basis: 28%;
 			height: 1.5rem;
 			margin: 0.2em;
 			
 
 		}
-		.wrapper:before{
+	/*	.wrapper:before{
 			content: '';
 			font-size: 0.5rem;
 			background-image: url(images/bag-dollar.png) ;
@@ -95,14 +96,15 @@
 			top: -0.3rem;
 			left: 0.4rem;
 			z-index: 100;
-		}
-
-/*	.item:nth-child(2){
-		align-self: center;
+		}*/
+	.wrapper img{
+		position: absolute;
+		width: 0.6rem;
+		height: 0.6rem;
+		left: 0.4rem;
+		top: -0.3rem;
 	}
-	.item:nth-child(3){
-		align-self: flex-end;
-	}	*/
+
 	</style>
 </head>
 <body>	
@@ -125,30 +127,25 @@
 	</header>
 	<div class="main-container">
 		<div class="wrapper">
-			<div class="row1">
+		<img src="images/bag-dollar.png">
 				<div class="item"></div>
 				<div class="item"></div>
 				<div class="item"></div>
-			</div>
-			<div class="row2">
 				<div class="item"></div>
 				<div class="item"></div>
 				<div class="item"></div>
-			</div>
 		</div>	
 		<div class="wrapper">
-			<div class="row1">
+		<img src="images/bag-dollar.png">
 				<div class="item"></div>
 				<div class="item"></div>
 				<div class="item"></div>
-			</div>
-			<div class="row2">
 				<div class="item"></div>
 				<div class="item"></div>
 				<div class="item"></div>
-			</div>
+		</div>	
 		</div>
-		<div class="wrapper"></div>
+
 	</div>
 </body>
 </html>
