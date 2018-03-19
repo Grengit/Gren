@@ -30,7 +30,7 @@
 		height: 0.6rem;
 		margin: 0 auto;
 		background-color: #fff;
-
+		position: relative;
 
 	}
 	.header-list {
@@ -45,19 +45,33 @@
 	.header-list a:hover{
 		background-color: #999;
 	}
-	/*
-	.search-box input{
-		width: 1.5rem;
-		height: 0.25rem;
-		border: 1px solid #eee;
-		border-radius: 8px;
-		display: block;
-		margin-top: 0.1rem;
-		margin-right: 0.4rem;
-		outline: none;
-		
+	.search-box{
+		position:absolute;
+		right:0;
+		top:0.15rem;
 	}
-*/
+	.search-box input{
+		width: 2rem;
+		height: 0.3rem;
+		border: 1px solid #ddd;
+		border-radius: 8px;
+		display: inline-block;
+		padding: 0 10px;
+		outline: none;
+	}
+	.search-button img{
+		width: 20px;
+		height: 20px;
+	}
+	.search-button{
+		border: none;
+		background: transparent;
+		position: relative;
+		right: 50px;
+		top: 5px;
+		cursor: pointer;
+	}
+
 	.main-container{
 		margin: 0 auto;
 		width: 80%;
@@ -68,7 +82,7 @@
 		flex-wrap: wrap;
 		justify-content:space-between; 
 		margin:0.4rem 0;
-		padding: 0.4rem 0.2rem;
+		padding: 0.4rem 0.4rem;
 		border: 1px solid #ccc;
 		border-radius: 12px;
 		background-color: #fff;
@@ -81,7 +95,7 @@
 			border-radius: 8px;
 			flex-basis: 28%;
 			height: 1.5rem;
-			margin: 0.2em;
+			margin: 0.2rem 0;
 			
 
 		}
@@ -114,20 +128,20 @@
 			<li class="header-list selected"><a href="#">首页</a></li>
 			<li class="header-list""><a href="#">导航</a></li>
 			<li class="header-list"><a href="#">小工具</a></li>
-			<!-- <li>
+			<li>
 			<div class="search-box">
 				<form>
 					<input type="text" name="search" method="get" placeholder="搜索...">
-					<button class="search-button"></button>
+					<button class="search-button"><img src="images/search.png"></button>
 				</form>
 			</div>
-			</li> -->
+			</li>
 		</ul>
 		</div>
 	</header>
 	<div class="main-container">
 		<div class="wrapper">
-		<img src="images/bag-dollar.png">
+		<img src="images/3mi.jpg">
 				<div class="item"></div>
 				<div class="item"></div>
 				<div class="item"></div>
@@ -136,7 +150,25 @@
 				<div class="item"></div>
 		</div>	
 		<div class="wrapper">
-		<img src="images/bag-dollar.png">
+		<img src="images/lim.jpg">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+		</div>	
+		<div class="wrapper">
+		<img src="images/int.jpg">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+		</div>	
+		<div class="wrapper">
+		<img src="images/pie.jpg">
 				<div class="item"></div>
 				<div class="item"></div>
 				<div class="item"></div>
@@ -145,7 +177,7 @@
 				<div class="item"></div>
 		</div>	
 		</div>
-
+	</div>
 	</div>
 </body>
 </html>
