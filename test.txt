@@ -25,3 +25,5 @@ $ git push origin master
 
 $ git reset --hard HEAD^
 $ git reset --hard 3628164
+
+÷ÿ∑µŒ¥¿¥£¨”√git reflog
