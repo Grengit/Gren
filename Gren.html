@@ -5,19 +5,21 @@
     <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="styles/master.css">
 </head>
 
 <body>
     <header class="head-container">
         <div class="head-wrapper">
             <ul>
-                <li class="header-list selected"><a href="#">首页</a></li>
-                <li class="header-list" id="navlist"><a href="#">导航</a>
-                    <div id="nav-content">
-                        <div class="nav-left">
+                <li class="headmenu"><a href="#" class="selected">首页</a></li> <!--首页-->
+                
+                <!--导航菜单 start，导航下拉菜单分左右两栏-->
+                <li class="headmenu"><a href="#">导航</a>
+                    <div class="nav-container">
+                        <div class="nav-container-left">
                             <div>
-                                    <h3>前端框架</h3>
+                                <h3>前端框架</h3>
                                 <ul>
                                     <li>VUE</li>
                                     <li>Angular</li>
@@ -28,7 +30,7 @@
                                 </ul>
                             </div>
                             <div>
-                                    <h3>样式类库</h3>
+                                <h3>样式类库</h3>
                                 <ul>
                                     <li>VUE</li>
                                     <li>Angular</li>
@@ -44,7 +46,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="nav-right fr">
+                        <!--nav-container-left end-->
+                        <div class="nav-container-right">
                             <ul>
                                 <h3>构建工具</h3>
                                 <li>VUE</li>
@@ -59,25 +62,45 @@
                                 <li>FIVE</li>
                                 <li>SIX</li>
                             </ul>
-                        </div>
+                        </div>  <!--nav-container-right end-->
+                    </div><!--nav-container end-->
+                </li>
+                <!--导航菜单 end-->
+                <!--小工具菜单 start-->
+                <li class="headmenu"><a href="#">小工具</a>
+                    <div class="nav-container tools">
+                        <ul>
+                            <li><img src="images/api.png" alt="">工具说明文字</li>
+                            <li><img src="images/build.png" alt=""> 阿里巴巴有个8</li>
+                            <li><img src="images/wx.png" alt=""> 我要进腾讯</li>
+                            <li><img src="images/game.png" alt=""> 好</li>
+                            <li><img src="images/online.png" alt=""> 加油</li>
+                            <li><img src="images/quality.png" alt=""> 加油加油加油加油</li>
+                            <li><img src="images/template-engine.png" alt=""> 进腾讯拉~~~~~</li>
+                            <li><img src="images/fonts.png" alt=""> 财务自由拉~~~</li>
+                        </ul>
                     </div>
                 </li>
-                <li class="header-list "><a href="# ">小工具</a></li>
+                <!--小工具菜单 end-->
+                <!--搜索框 start-->
                 <li>
                     <div class="search-box ">
                         <form>
-                            <input type="text " name="search " method="get " placeholder="搜索... ">
-                            <button class="search-button "><img src="images/search.png "></button>
+                            <input class="search-input" type="text " name="search " method="get " placeholder="搜索... ">
+                            <button class="search-button "><img src="images/search.svg" alt="搜索按鈕"></button>
                         </form>
                     </div>
                 </li>
+                <!--搜索框 end-->
             </ul>
         </div>
+        <!--header wrapper：80%居中显示-->
     </header>
-    <div class="main-container ">
-        <div class="wrapper ">
-            <img src="images/3mi.jpg "><span>3MI</span>
-            <div class="item ">
+    <!--header end-->
+    <div class="main-container">
+        <div class="items-wrapper ">
+            <img src="images/3mi.jpg" alt="三米" id="3mi"><span>3MI</span>
+            <div class="item">
                 <h3>GITHUB</h3>
                 <p>我是米米米哦哦哦，两行自动省略行自动省略自动省略动省略自动省略自动省略动省略自动动省略自动省略动省略自动动省略自动省略动省略自动省略自动省略动省略省略，略略略。。。</p>
             </div>
@@ -102,8 +125,9 @@
                 <p>我是米米米哦哦哦，两行自动省略行自动省略自动省略动省略省略，略略略。。。</p>
             </div>
         </div>
-        <div class="wrapper ">
-            <img src="images/lim.jpg "><span>LIM</span>
+        <!--三米items-wrapper end-->
+        <div class="items-wrapper">
+            <img src="images/lim.jpg" alt="林" id="lim"><span>LIM</span>
             <div class="item ">
                 <h3>GITHUB</h3>
                 <p>我是林林林哦哦哦，两行怎么自动省略啊自动省略啊动省略啊省略，啊啊啊？？？</p>
@@ -129,8 +153,9 @@
                 <p>我是林林林哦哦哦，两行怎么自动省略啊自动省略啊动省略啊省略，啊啊啊？？？</p>
             </div>
         </div>
-        <div class="wrapper ">
-            <img src="images/int.jpg "><span>INT</span>
+         <!--林items-wrapper end-->
+        <div class="items-wrapper">
+            <img src="images/int.jpg" alt="映" id="int"><span>INT</span>
             <div class="item "></div>
             <div class="item "></div>
             <div class="item "></div>
@@ -138,8 +163,9 @@
             <div class="item "></div>
             <div class="item "></div>
         </div>
-        <div class="wrapper ">
-            <img src="images/pie.jpg "><span>PIE</span>
+        <!--映items-wrapper end-->
+        <div class="items-wrapper">
+            <img src="images/pie.jpg" alt="丿" id="pie"><span>PIE</span>
             <div class="item "></div>
             <div class="item "></div>
             <div class="item "></div>
@@ -147,34 +173,12 @@
             <div class="item "></div>
             <div class="item "></div>
         </div>
+        <!--丿items-wrapper end-->
     </div>
     </div>
     </div>
-    <script type="text/javascript ">
-    (function() {
-        if (!window.addEventListener) return;
-        var html = document.documentElement;
-
-        function setFont() {
-            var cliWidth = html.clientWidth;
-            html.style.fontSize = 100 * (cliWidth / 1920) + 'px';
-        }
-        document.addEventListener('DOMContentLoaded', setFont, false)
-    })();
-
-    //导航栏
-    var navLink= document.getElementById('navlist');
-    navLink.onmouseover = show;
-    navLink.onmouseout = hide;
-
-    function show() {
-        document.getElementById('nav-content').style.display = "block";
-    }
-
-    function hide() {
-        document.getElementById('nav-content').style.display = "none";
-    }
-    </script>
+    <script src="scrips/js.js"></script>
+    <!--删除type-->
 </body>
 
 </html>
