@@ -110,16 +110,16 @@ a {
 .nav-container-left {
     display: inline-block;
     width: 3.5rem;
-    height: 4.5rem;
+    height: 5rem;
     background-color: #fff;
     border-right: 1px solid #ccc;
 }
 
 .nav-container-right {
     display: inline-block;
+    vertical-align: top;   
     width: 3.5rem;
     height: 4.5rem;
-    float: right;
     margin-left: 0.5rem;
 }
 
@@ -129,6 +129,15 @@ a {
     color: #f18d8d;
     line-height: 0.5rem;
     clear: both;
+}
+.recommend{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 0.1rem;
 }
 .tools img {
     display: inline-block;
@@ -144,6 +153,10 @@ a {
     vertical-align: middle;
 }
 
+
+.tools .recommend{
+    text-align: center;
+}
 
 .search-box {
     display: inline-block;
@@ -263,7 +276,7 @@ a {
 
 @media screen and (max-width:768px) {
     .head-container {
-        width: 100%;
+        width: 100vw;
         height: 0.5rem;
         font-size: 0.22rem;
     }
@@ -280,7 +293,7 @@ a {
     .nav-container {
         left: 0;
         top: 0.5rem;
-        width: 100vw;
+        width: 100%;
         border-radius: 0;
     }
     .nav-container-left {
@@ -291,7 +304,10 @@ a {
         float: none;
         margin-left: 0;
     }
-    
+    .recommend{  
+    width: 100vw;
+   
+}
     .search-box {
         right: 0;
         top: 0.08rem;
@@ -301,7 +317,7 @@ a {
     }
 
     .main-container {
-        width: 99%;
+        width: 100vw;
         margin-top: 0;
     }
     .items-wrapper>img {
@@ -321,4 +337,6 @@ a {
         margin: 0.2rem 0;
         padding: 0.4rem 0.1rem;
     }
+    .item {
+    flex: 1 0 95%;
 }
